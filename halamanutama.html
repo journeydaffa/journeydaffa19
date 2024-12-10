@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JourneyWithDaffa - Tragedi di Indonesia</title>
+    <style>
+      /* Global Styles */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1c1f26;
+        color: #f4f4f4;
+        line-height: 1.8;
+        overflow-x: hidden;
+      }
+      h1,
+      h2,
+      h3 {
+        margin-bottom: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: #d4af37;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+      a:hover {
+        color: #b8860b;
+        text-shadow: 0 0 10px #d4af37;
+      }
+
+      /* Header Section */
+      header {
+        height: 100vh;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.9)
+          ),
+          url("https://example.com/tragedy-header.jpg") no-repeat center
+            center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        animation: slideIn 2s ease-out;
+        overflow: hidden;
+      }
+      header h1 {
+        font-size: 4rem;
+        text-shadow: 3px 3px 30px rgba(212, 175, 55, 0.8);
+        color: #d4af37;
+        animation: fadeIn 2s ease-out;
+      }
+
+      /* Continuous Typing Text Animation */
+      header p {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        color: #f4f4f4;
+        animation: typing 5s steps(40) 1s infinite,
+          blink 0.75s step-end infinite;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid #d4af37;
+      }
+
+      /* Section Styles */
+      section {
+        padding: 80px 20px;
+        background: #fff;
+        color: #333;
+        margin-top: -100px;
+        border-radius: 25px 25px 0 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      section h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        color: #2a2d36;
+        animation: fadeIn 1.5s ease-out;
+      }
+      .tragedy-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+      .tragedy-item {
+        background: #fff;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to bottom right, #d4af37, #b8860b);
+        border-image-slice: 1;
+        border-radius: 15px;
+        padding: 30px;
+        width: 320px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease;
+        animation: fadeInUp 2s ease-out;
+      }
+      .tragedy-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(212, 175, 55, 0.8);
+        background: #fdf5e6;
+      }
+      .tragedy-item h3 {
+        color: #2a2d36;
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+      }
+      .tragedy-item p {
+        color: #444;
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+      }
+
+      /* Footer */
+      footer {
+        background: #2a2d36;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        color: #f4f4f4;
+        position: relative;
+      }
+      footer a {
+        color: #d4af37;
+        text-decoration: underline;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateY(-30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>JourneyWithDaffa</h1>
+      <p>Menggali Tragedi-Tragedi Terbesar di Indonesia</p>
+    </header>
+
+    <!-- Main Section -->
+    <section>
+      <h2>Tragedi-Tragedi di Indonesia</h2>
+      <div class="tragedy-list">
+        <div class="tragedy-item">
+          <h3>Perang Sampit</h3>
+          <p>
+            Konflik besar antara suku Dayak dan Madura yang memicu kerusakan
+            besar di Kalimantan pada awal 2000-an. Tragedi ini membawa dampak
+            sosial, budaya, dan ekonomi yang besar.
+          </p>
+          <a href="perangsampit.html" target="_blank">Baca Selengkapnya</a>
+        </div>
+        <div class="tragedy-item">
+          <h3>Tragedi 1965</h3>
+          <p>
+            Peristiwa kelam yang melibatkan pembantaian massal yang dipicu oleh
+            ketegangan politik, mengubah wajah Indonesia selamanya. Tragedi ini
+            masih menyisakan luka di banyak pihak.
+          </p>
+          <a href="tragedi1965.html" target="_blank">Baca Selengkapnya</a>
+        </div>
+        <div class="tragedy-item">
+          <h3>Gempa Aceh 2004</h3>
+          <p>
+            Gempa bumi dan tsunami yang melanda Aceh pada 2004 menyebabkan
+            ribuan korban jiwa. Bencana ini menjadi salah satu yang terbesar
+            dalam sejarah Indonesia dan dunia.
+          </p>
+          <a href="gempaaceh.html" target="_blank">Baca Selengkapnya</a>
+        </div>
+        <div class="tragedy-item">
+          <h3>Tragedi Semanggi 1998</h3>
+          <p>
+            Kerusuhan besar yang terjadi selama krisis ekonomi di Indonesia,
+            menyebabkan banyak korban jiwa dan menjadi titik balik dalam sejarah
+            politik Indonesia.
+          </p>
+          <a href="tragedisemanggi.html" target="_blank">Baca Selengkapnya</a>
+        </div>
+        <div class="tragedy-item">
+          <h3>Peristiwa 1 Oktober 1965</h3>
+          <p>
+            Pemberontakan G30S/PKI yang mengakibatkan pembunuhan massal dan
+            ketegangan politik, yang sampai sekarang menjadi perdebatan panjang
+            di Indonesia.
+          </p>
+          <a href="peristiwa1oktober.html" target="_blank"
+            >Baca Selengkapnya</a
+          >
+        </div>
+        <div class="tragedy-item">
+          <h3>Tragedi Trisakti 1998</h3>
+          <p>
+            Tragedi yang terjadi pada 12 Mei 1998, ketika mahasiswa yang sedang
+            berunjuk rasa ditembaki oleh aparat keamanan. Kejadian ini menjadi
+            salah satu momen penting dalam reformasi Indonesia.
+          </p>
+          <a href="trageditrisakti.html" target="_blank">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; 2024 JourneyWithDaffa</p>
+    </footer>
+    <!-- Tambahkan sebelum tag </body> -->
+<div class="contact-cs">
+  <a href="https://wa.me/6282328179376 "target="_blank" title="Hubungi CS">
+    💬 Chat CS
+  </a>
+</div>
+
+<style>
+  .contact-cs {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .contact-cs a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .contact-cs a:hover {
+    background-color: #1c9c57;
+    transform: scale(1.1);
+  }
+</style>
+
+  </body>
+</html>

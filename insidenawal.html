@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insiden Awal Perang Sampit</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1c1f26;
+        color: #f4f4f4;
+        line-height: 1.8;
+      }
+      header {
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.9)
+        );
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #d4af37;
+        animation: fadeIn 2s ease-out;
+        position: relative;
+        overflow: hidden;
+      }
+      header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+          circle,
+          rgba(212, 175, 55, 0.2),
+          transparent
+        );
+        animation: headerGlow 6s infinite alternate;
+      }
+      header h1 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        animation: slideInDown 2s ease-out;
+      }
+      header p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        animation: fadeIn 2s 0.5s ease-out;
+        color: #f4f4f4;
+      }
+      main {
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        background: #2a2d36;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        animation: fadeInUp 2s ease-in-out;
+      }
+      main h2 {
+        margin-bottom: 20px;
+        color: #d4af37;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        animation: slideInLeft 1s ease-in-out;
+      }
+      main p {
+        margin-bottom: 15px;
+        font-size: 1rem;
+        text-align: justify;
+        animation: fadeIn 1s ease-in-out;
+      }
+      main .highlight {
+        color: #b8860b;
+        font-weight: bold;
+      }
+      footer {
+        text-align: center;
+        padding: 15px;
+        background: #2a2d36;
+        color: #f4f4f4;
+        margin-top: 20px;
+        font-size: 0.9rem;
+      }
+      footer a {
+        color: #d4af37;
+        text-decoration: underline;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInDown {
+        from {
+          transform: translateY(-30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes headerGlow {
+        0% {
+          transform: translateX(0) rotate(0deg);
+        }
+        100% {
+          transform: translateX(200%) rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Insiden Awal Perang Sampit</h1>
+        <p>
+          Kisah peristiwa yang memicu salah satu konflik terbesar dalam sejarah
+          Indonesia.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <h2>Insiden yang Memicu Konflik</h2>
+      <p>
+        Perang Sampit dimulai dari ketegangan yang terjadi antara individu, yang
+        berkembang menjadi konflik yang melibatkan kelompok besar. Insiden awal
+        ini melibatkan pertengkaran yang pada akhirnya memicu eskalasi menjadi
+        kekerasan terbuka. Kurangnya mediasi memperparah situasi yang sudah
+        memanas.
+      </p>
+
+      <h2>Peran Kelompok dalam Konflik</h2>
+      <p>
+        Dalam perkembangan konflik, keterlibatan
+        <span class="highlight">suku Dayak</span> dan
+        <span class="highlight">Madura</span> semakin memperjelas perbedaan
+        budaya dan sosial yang mendalam. Perebutan sumber daya, lahan, dan
+        pekerjaan memperburuk ketegangan yang telah lama ada di masyarakat.
+      </p>
+
+      <h2>Dampak dari Insiden Awal</h2>
+      <p>
+        Insiden awal ini menyebabkan kerusakan yang sangat besar, baik secara
+        fisik maupun sosial. Tidak hanya menimbulkan korban jiwa dan kerusakan
+        material, tetapi juga meninggalkan trauma mendalam di kalangan
+        masyarakat yang terlibat.
+      </p>
+    </main>
+
+    <footer>
+      &copy; 2024 JourneyWithDaffa |
+      <a href="perangsampit.html">Kembali ke Halaman Utama</a>
+    </footer>
+  </body>
+</html>

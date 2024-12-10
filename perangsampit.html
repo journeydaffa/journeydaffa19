@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perang Sampit</title>
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        color: #444;
+        background: #1c1f26;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+      h1,
+      h2,
+      h3 {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 10px;
+        line-height: 1.6;
+      }
+      a {
+        text-decoration: none;
+        color: #d4af37;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+      a:hover {
+        color: #b8860b;
+        text-shadow: 0 0 10px #d4af37;
+      }
+
+      /* Scroll Indicator */
+      #scroll-indicator {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 5px;
+        background: linear-gradient(to right, #d4af37, #b8860b);
+        width: 0;
+        z-index: 1000;
+        transition: width 0.2s ease;
+      }
+
+      /* Header Section */
+      header {
+        height: 100vh;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.9)
+          ),
+          url("https://example.com/perang-sampit.jpg") no-repeat center
+            center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+      }
+      header h1 {
+        font-size: 4rem;
+        text-shadow: 2px 2px 20px rgba(212, 175, 55, 0.8);
+        color: #d4af37;
+        animation: fadeIn 2s ease forwards;
+        opacity: 0;
+      }
+      header p {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        color: #f4f4f4;
+        animation: fadeIn 2.5s ease forwards;
+        opacity: 0;
+      }
+
+      /* Timeline Section */
+      section {
+        padding: 50px 20px;
+        background: #fff;
+        color: #333;
+      }
+      section h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        color: #2a2d36;
+      }
+      .timeline {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      .timeline-item {
+        background: #fdfdfd;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to bottom right, #d4af37, #b8860b);
+        border-image-slice: 1;
+        border-radius: 15px;
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        transition: all 0.4s ease;
+      }
+      .timeline-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+        background: #fdf5e6;
+      }
+      .timeline-item img {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        object-fit: cover;
+      }
+      .timeline-item h3 {
+        color: #2a2d36;
+      }
+      .timeline-item a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background: #d4af37;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+      }
+      .timeline-item a:hover {
+        background: #b8860b;
+        color: #000;
+      }
+
+      /* Footer */
+      footer {
+        background: #2a2d36;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        color: #f4f4f4;
+      }
+      footer a {
+        color: #d4af37;
+        text-decoration: underline;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+    <script>
+      // Scroll Indicator Script
+      window.addEventListener("scroll", function () {
+        const scrollIndicator = document.getElementById("scroll-indicator");
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.offsetHeight - window.innerHeight;
+        const width = (scrollTop / docHeight) * 100;
+        scrollIndicator.style.width = width + "%";
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Scroll Indicator -->
+    <div id="scroll-indicator"></div>
+
+    <header>
+      <h1>Perang Sampit</h1>
+      <p>Sejarah kelam yang tak terlupakan dalam lembaran bangsa.</p>
+    </header>
+
+    <section>
+      <h2>Latar Belakang Perang Sampit</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <img src="https://example.com/akar-konflik.jpg" alt="Akar Konflik" />
+          <h3>Akar Konflik</h3>
+          <p>
+            Konflik ini berakar pada ketegangan sosial dan budaya antara dua
+            kelompok etnis.
+          </p>
+          <a href="akarkonflik.html" target="_blank">Baca Selengkapnya</a>
+        </div>
+        <div class="timeline-item">
+          <img src="https://example.com/insiden-awal.jpg" alt="Insiden Awal" />
+          <h3>Insiden Awal</h3>
+          <p>
+            Serangkaian insiden memicu kemarahan yang akhirnya meledak menjadi
+            konflik besar.
+          </p>
+          <a href="insidenawal.html" target="_blank">Baca Selengkapnya</a>
+        </div>
+        <div class="timeline-item">
+          <img
+            src="https://example.com/peran-pemerintah.jpg"
+            alt="Peran Pemerintah"
+          />
+          <h3>Peran Pemerintah</h3>
+          <p>
+            Upaya pemerintah untuk menengahi konflik menghadapi tantangan berat.
+          </p>
+          <a href="peranpemerintah.html" target="_blank">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2024 JourneyWithDaffa |
+      <a href="halamanutama.html">Kunjungi Situs Kami</a>
+    </footer>
+  </body>
+</html>
